@@ -25,7 +25,7 @@
     "src"
   ],
   "scripts": {
-    "build": "rolldown --config rolldown.config.ts && tsgo --emitDeclarationOnly",
+    "build": "rm -rf dist && rolldown --config rolldown.config.ts && tsc --emitDeclarationOnly",
     "typecheck": "tsgo --noEmit",
     "dev": "bun --watch src/index.ts"
   },
