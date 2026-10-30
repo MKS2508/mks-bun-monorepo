@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "dev": "bun --watch src/index.ts",
-    "build": "rolldown --config rolldown.config.ts && tsgo --emitDeclarationOnly",
+    "build": "rm -rf dist && rolldown --config rolldown.config.ts && tsc --emitDeclarationOnly",
     "typecheck": "tsgo --noEmit",
     "lint": "oxlint",
     "test": "bun test"
